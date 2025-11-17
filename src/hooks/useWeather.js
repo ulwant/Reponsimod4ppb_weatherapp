@@ -5,12 +5,20 @@ export default function useWeather(city) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_KEY = "bd284f96729548afbf1123456251411";
+  // Use Vite env variable. Make sure you have VITE_WEATHER_API_KEY in .env
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY || "";
 
   useEffect(() => {
     async function fetchWeather() {
       try {
         setLoading(true);
+        setError(null);
+
+        if (!API_KEY) {
+          throw new Error(
+            "Missing API key. Set VITE_WEATHER_API_KEY in your .env file and restart the dev server."
+          );
+        }
 
         const res = await fetch(
           `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=7&aqi=yes&alerts=no`
@@ -21,7 +29,7 @@ export default function useWeather(city) {
         const data = await res.json();
         setWeather(data);
       } catch (err) {
-        setError(err.message);
+        setError(err.message || String(err));
       } finally {
         setLoading(false);
       }
