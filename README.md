@@ -1,21 +1,19 @@
-# Apple-Style Weather App 🌤️
+# Aplikasi cuaca tugas responsi 🌤️
 
-A sleek, responsive, iOS/Android-inspired weather web application built with React and Tailwind CSS.  
-Designed to deliver a powerful weather experience with hourly & daily forecasts, beautiful UI, and PWA support.
 
 ## 🚀 Features
-- Current weather for any city worldwide (via [WeatherAPI](https://www.weatherapi.com/)).  
-- Hourly forecast (next 24 hours) with icons, temperature, and markers for sunrise/sunset.  
-- Daily forecast section (7-10 days) with high/low temps and weather conditions.  
-- UI inspired by Apple’s Weather app: clean typography, background gradients that change with condition, smooth transitions.  
-- Progressive Web App (PWA) compatible: install to home screen, custom app icon, launch screen.  
-- React components + Tailwind CSS for fast and responsive UI.
-
-## 🧰 Tech Stack
-- **React** v18+  
-- **Vite** for fast builds  
-- **Tailwind CSS** for utility-first styling  
-- **Framer Motion** for animations and smooth transitions  
-- **WeatherAPI** for weather data  
-- **PWA features**: `manifest.json`, service worker, app icons.
+- menggunakan API dari weatherAPI (via [WeatherAPI](https://www.weatherapi.com/)).  
+- Prakiraan per jam (24 jam ke depan) dengan ikon, suhu, dan penanda matahari terbit/terbenam.
+- Bagian prakiraan harian (7-10 hari) dengan suhu tinggi/rendah dan kondisi cuaca.
+- UI terinspirasi oleh aplikasi Cuaca Apple: tipografi yang bersih, gradien latar belakang yang berubah sesuai kondisi, transisi yang mulus.
+- Kompatibel dengan Progressive Web App (PWA): instal ke layar beranda, ikon aplikasi khusus, layar peluncuran.
+- Komponen React + Tailwind CSS untuk UI yang cepat dan responsif.
+- 
+## penggunaan teknis
+- **React** v18+
+- **Vite** untuk build cepat
+- **Tailwind CSS** untuk gaya yang mengutamakan utilitas
+- **Framer Motion** untuk animasi dan transisi yang mulus
+- **WeatherAPI** untuk data cuaca
+- **Fitur PWA**: `manifest.json`, service worker, ikon aplikasi.
 
