@@ -1,16 +1,21 @@
-# React + Vite
+# Apple-Style Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, responsive, iOS/Android-inspired weather web application built with React and Tailwind CSS.  
+Designed to deliver a powerful weather experience with hourly & daily forecasts, beautiful UI, and PWA support.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Current weather for any city worldwide (via [WeatherAPI](https://www.weatherapi.com/)).  
+- Hourly forecast (next 24 hours) with icons, temperature, and markers for sunrise/sunset.  
+- Daily forecast section (7-10 days) with high/low temps and weather conditions.  
+- UI inspired by Apple’s Weather app: clean typography, background gradients that change with condition, smooth transitions.  
+- Progressive Web App (PWA) compatible: install to home screen, custom app icon, launch screen.  
+- React components + Tailwind CSS for fast and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Tech Stack
+- **React** v18+  
+- **Vite** for fast builds  
+- **Tailwind CSS** for utility-first styling  
+- **Framer Motion** for animations and smooth transitions  
+- **WeatherAPI** for weather data  
+- **PWA features**: `manifest.json`, service worker, app icons.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
